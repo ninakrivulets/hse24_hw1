@@ -1,0 +1,60 @@
+Platanus version: 1.2.4
+platanus gap_close -o Poil -c Poil_scaffold.fa -IP1 sub1.fastq.trimmed sub2.fastq.trimmed -OP2 matep1.fastq.int_trimmed matep2.fastq.int_trimmed 
+
+K=32, making hash table...
+[PAIR_LIBRARY 1]
+mapping reads...
+TOTAL_PAIR = 4813389
+MAPPED_IN_SAME_CONTIG = 4559406 (0.947234)
+estimating insert-size...
+PEAK = 244
+LOWER_LIMIT (permissible range to estimate AVE_INS)= 61
+UPPER_LIMIT (permissible range to estimate AVE_INS)= 427
+AVE_INS = 247
+SD_INS = 39
+mapping reads that cover small gaps...
+[PAIR_LIBRARY 2]
+mapping reads...
+TOTAL_PAIR = 856302
+MAPPED_IN_SAME_CONTIG = 642799 (0.750669)
+estimating insert-size...
+PEAK = 2488
+LOWER_LIMIT (permissible range to estimate AVE_INS)= 622
+UPPER_LIMIT (permissible range to estimate AVE_INS)= 4354
+AVE_INS = 2902
+SD_INS = 795
+mapping reads that cover small gaps...
+making hash table of gaps...
+making consensus sequences to close small gaps...
+NUM_GAP=75
+NUM_CLOSED_GAP=36
+[PAIR_LIBRARY 1]
+saving reads covering gaps...
+loading reads covering gaps...
+assembling localized reads...
+NUM_GAPS = 39
+NUM_NOT_CLOSED_GAPS (too many reads are mapped comapering to coverage)= 1
+NUM_CLOSED_GAPS_USING_DE_BRUIJN = 6
+NUM_CLOSED_GAPS_USING_OVERLAP_LAYOUT_CONSENSUS = 1
+[PAIR_LIBRARY 2]
+saving reads covering gaps...
+loading reads covering gaps...
+assembling localized reads...
+NUM_GAPS = 32
+NUM_NOT_CLOSED_GAPS (too many reads are mapped comapering to coverage)= 0
+NUM_CLOSED_GAPS_USING_DE_BRUIJN = 20
+NUM_CLOSED_GAPS_USING_OVERLAP_LAYOUT_CONSENSUS = 0
+[ALL LIBRARY]
+assembling localized reads...
+NUM_GAPS = 12
+NUM_NOT_CLOSED_GAPS (too many reads are mapped comapering to coverage)= 1
+NUM_CLOSED_GAPS_USING_DE_BRUIJN = 0
+NUM_CLOSED_GAPS_USING_OVERLAP_LAYOUT_CONSENSUS = 0
+TOTAL_NUM_CLOSED_GAPS = 63
+gap_close completed!!
+
+#### PROCESS INFORMATION ####
+VmPeak:           0.327 GByte
+VmHWM:            0.302 GByte
+179.05user 2.29system 3:06.71elapsed 97%CPU (0avgtext+0avgdata 316932maxresident)k
+0inputs+5096760outputs (0major+99504minor)pagefaults 0swaps
