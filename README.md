@@ -33,7 +33,7 @@ multiqc -o multiqc fastqc
 platanus_trim sub*
 platanus_internal_trim matep*   
 ```
-6. оцениваю подрезанные чтения и создаю отчет (в папках fastqc_trimmed, multiqc_trimmed) 
+6. Оцениваю подрезанные чтения и создаю отчет (в папках fastqc_trimmed, multiqc_trimmed) 
 ```
 mkdir fastqc_trimmed
 mkdir multiqc_trimmed
@@ -53,4 +53,9 @@ time platanus scaffold -o Poil -c Poil_contig.fa -IP1 sub1.fastq.trimmed sub2.fa
 time platanus gap_close -o Poil -c Poil_scaffold.fa -IP1 sub1.fastq.trimmed sub2.fastq.trimmed -OP2 matep1.fastq.int_trimmed matep2.fastq.int_trimmed 2> gapclose.log
 ```
 10. С помощью команды rm удаляю лишние файлы
+
+
+# Бонусная часть
+
+возьмем 3 миллиона чтений типа paired-end и 1 миллион чтений типа mate-pairsю
    
